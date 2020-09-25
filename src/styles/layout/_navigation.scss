@@ -1,0 +1,13 @@
+.navigation {
+  color: $color-yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $color-black;
+
+  .logo {
+    font-size: 3.5rem;
+    color: $color-white;
+    padding: 0.5rem;
+  }
+}

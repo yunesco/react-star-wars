@@ -1,0 +1,74 @@
+// Colors
+
+$color-primary-dark: #2c2c2c;
+$color-primary-red: #9e4f60;
+$color-primary-gray: #cccccc;
+$color-white: #fff;
+$color-black: black;
+$color-yellow: #ebd800;
+
+// Spacing
+$s-size: 1.2rem;
+$m-size: 2rem;
+$l-size: 5rem;
+$desktop-breakpoint: 45rem;
+
+textarea,
+input {
+  outline: none;
+  background-color: #343434;
+  border: none;
+  height: 5rem;
+  width: 30rem;
+  text-align: center;
+  border-radius: 7px;
+  &:focus {
+    background-color: #454545;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Star Jedi";
+  src: url("../assets/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  // color: $color-yellow;
+  font-size: $m-size;
+}
+
+h1 {
+  color: $color-white;
+}
+
+.link {
+  color: $color-white;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+}
+
+h1 {
+  color: white;
+  font-family: "Star Jedi", sans-serif;
+}

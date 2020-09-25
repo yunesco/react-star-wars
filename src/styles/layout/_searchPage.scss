@@ -1,0 +1,20 @@
+.search_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .search_input_container {
+    margin: 5rem;
+  }
+  .search_results_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .planet {
+    margin: 2.5rem;
+    width: 80vw;
+  }
+}
