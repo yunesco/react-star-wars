@@ -19,7 +19,7 @@ const SearchPage = () => {
         <input
           value={value}
           onChange={(e) => onChangeHandler(e)}
-          placeholder="Search Star Wars"
+          placeholder="Search The Galaxy"
         />
       </div>
       <div className="search_results_container">
