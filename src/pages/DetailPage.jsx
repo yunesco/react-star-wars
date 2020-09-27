@@ -13,11 +13,12 @@ const DetailPage = (props) => {
 
   const [residentsList, setResidentsList] = useState([]);
   const [filmsList, setFilmsList] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const { residents, films } = state;
 
   useEffect(() => {
+    setLoading(true);
     makeMultipleApiCalls(residents, setResidentsList);
     makeMultipleApiCalls(films, setFilmsList);
     setLoading(false);
