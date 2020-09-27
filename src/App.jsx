@@ -18,7 +18,6 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route path="/planet/:name" component={DetailPage} />
         <Route path="/search/" component={SearchPage} />
-
         <Route component={NotFoundPage} />
       </Switch>
     </Page>
