@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router';
 
 const LinkButton = (props) => {
-  console.log(props);
   const {
     history,
     location,

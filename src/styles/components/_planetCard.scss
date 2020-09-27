@@ -9,25 +9,20 @@
   border: 1px solid $color-primary-red;
   border-radius: 3px;
   padding: 1em;
-  margin: 0.2em;
-
+  margin: 1em;
+  width: 40%;
   .card_content {
     text-align: center;
   }
 
-  .linkButton {
-    margin-top: 2em;
-    background-color: $color-primary-gray;
-    border: 1px solid $color-primary-red;
-    border-radius: 3px;
-    color: $color-black;
-    padding: 7px 14px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
   h2 {
     margin: 0.5rem;
     color: $color-yellow;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card_container {
+    width: 100%;
   }
 }

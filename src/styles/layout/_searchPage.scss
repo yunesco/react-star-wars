@@ -8,13 +8,13 @@
     margin: 5rem;
   }
   .search_results_container {
+    width: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
-  .planet {
-    margin: 2.5rem;
-    width: 80vw;
+  .card_container {
+    width: 100%;
   }
 }

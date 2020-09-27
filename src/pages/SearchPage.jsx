@@ -27,17 +27,13 @@ const SearchPage = () => {
           <h1>There are no planets.</h1>
         )}
         {loading && <h1>Loading...</h1>}
-        <div className="planets_result_container">
-          {planets && (
-            <div>
-              {planets.map((planet) => (
-                <div className="planet" key={planet.name}>
-                  <Card data={planet} />
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        {planets && (
+          <>
+            {planets.map((planet) => (
+              <Card data={planet} />
+            ))}
+          </>
+        )}
       </div>
     </div>
   );
