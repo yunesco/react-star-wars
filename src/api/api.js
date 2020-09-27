@@ -11,6 +11,7 @@ export const makeMultipleApiCalls = (links, saveResToState) => {
 };
 
 export const getData = (apiUrl, setPageCount, setData, setLoading) => {
+  setLoading(true);
   axios
     .get(apiUrl)
     .then((response) => {

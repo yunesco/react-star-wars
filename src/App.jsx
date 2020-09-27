@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import Navigation from './components/Navigation';
 import Page from './components/Page';
@@ -14,12 +15,14 @@ const App = () => (
   <Router>
     <Page>
       <Navigation />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/planet/:name" component={DetailPage} />
-        <Route path="/search/" component={SearchPage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <AnimatePresence>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/planet/:name" component={DetailPage} />
+          <Route path="/search/" component={SearchPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+      </AnimatePresence>
     </Page>
   </Router>
 );

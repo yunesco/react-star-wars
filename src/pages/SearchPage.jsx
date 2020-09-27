@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import Card from '../components/PlanetCard';
 import { search } from '../api/api';
@@ -14,7 +15,12 @@ const SearchPage = () => {
   };
 
   return (
-    <div className="search_container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="search_container"
+    >
       <div className="search_input_container">
         <input
           value={value}
@@ -35,7 +41,7 @@ const SearchPage = () => {
           </>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
